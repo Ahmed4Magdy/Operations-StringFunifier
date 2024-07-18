@@ -14,7 +14,7 @@ public class Main {
 
         List<Integer> startIndexes = new ArrayList<>();
         List<Integer> endIndexes = new ArrayList<>();
-        List<String> funOperations = new ArrayList<>();
+//        List<String> funOperations = new ArrayList<>();
 
         System.out.println("Enter start indexes:");
         for (int i = 0; i < numRanges; i++) {
@@ -26,17 +26,13 @@ public class Main {
             endIndexes.add(scanner.nextInt());
         }
 
-        System.out.println("enter  numberofranges ");
-         int numofranges = scanner.nextInt();
-        System.out.println("Enter fun operations (REVERSE, UPPERCASE, LOWERCASE, SORT, COMPRESSION):");
-        for (int i = 0; i < numofranges; i++) {
-            funOperations.add(scanner.next().toUpperCase());
-        }
 
-        StringFunifier funifier = new StringFunifier(boringString, startIndexes, endIndexes, funOperations);
+//    StringFunifier funifier = new StringFunifier(boringString, startIndexes, endIndexes, funOperations);
+//        System.out.println(funifier.getFunnyString());
+
+        StringFunifier funifier = new StringFunifier(boringString, startIndexes, endIndexes);
         System.out.println(funifier.getFunnyString());
     }
-
 
 }
 
